@@ -1,0 +1,185 @@
+@import '~src/assets/scss/theme-config';
+@import '~src/assets/scss/config';
+
+.#{$style-prefix}-instruct {
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $light;
+
+	&__instruct-1,
+	&__instruct-2 {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__next {
+		animation-delay: 1.5s;
+		top: 35vh;
+		background-color: $primary;
+		color: $light;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		transition: 0.2s linear;
+		width: fit-content;
+		border-radius: 24px;
+		cursor: pointer;
+
+		@include for-phone {
+			margin-top: 20px;
+			font-size: 20px;
+			padding-top: 5px;
+			padding-left: 13px;
+			padding-right: 13px;
+			padding-bottom: 5px;
+		}
+
+		@include for-tablet {
+			margin-top: 25px;
+			font-size: 24px;
+			padding-top: 6px;
+			padding-left: 14px;
+			padding-right: 14px;
+			padding-bottom: 6px;
+		}
+
+		@include for-small-desktop {
+			margin-top: 40px;
+			font-size: 32px;
+			padding-top: 7px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 7px;
+		}
+
+		@include for-desktop {
+			margin-top: 50px;
+			font-size: 36px;
+			padding-top: 8px;
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-bottom: 8px;
+		}
+
+		@include for-big-desktop {
+			margin-top: 80px;
+			font-size: 42px;
+			padding-top: 10px;
+			padding-left: 18px;
+			padding-right: 18px;
+			padding-bottom: 10px;
+		}
+
+		&:hover {
+			padding-top: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 12px;
+		}
+
+		&:active {
+			padding-top: 8px;
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-bottom: 8px;
+		}
+	}
+
+	span {
+		color: $info;
+		font-weight: bolder;
+		margin-top: 4px;
+
+		@include for-phone {
+			font-size: 20px;
+		}
+
+		@include for-tablet {
+			font-size: 24px;
+		}
+
+		@include for-small-desktop {
+			font-size: 36px;
+		}
+
+		@include for-desktop {
+			font-size: 42px;
+		}
+
+		@include for-big-desktop {
+			font-size: 48px;
+		}
+	}
+
+	&__instruct-header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		img {
+			@include for-phone {
+				height: 48px;
+			}
+
+			@include for-tablet {
+				height: 64px;
+			}
+
+			@include for-small-desktop {
+				height: 84px;
+			}
+
+			@include for-desktop {
+				height: 96px;
+			}
+
+			@include for-big-desktop {
+				height: 140px;
+			}
+		}
+	}
+
+	&__instruct-2 {
+		span {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__vitamin {
+		@include for-phone {
+			height: 24px;
+		}
+
+		@include for-tablet {
+			height: 36px;
+		}
+
+		@include for-small-desktop {
+			height: 42px;
+		}
+
+		@include for-desktop {
+			height: 48px;
+		}
+
+		@include for-big-desktop {
+			height: 52px;
+		}
+	}
+}

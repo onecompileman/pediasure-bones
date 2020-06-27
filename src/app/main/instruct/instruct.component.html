@@ -1,0 +1,41 @@
+<div class="pb-instruct">
+
+  <div *ngIf="step === 1" class="pb-instruct__instruct-1">
+    <span>
+      Strong bones are important for a growing child.
+    </span>
+    <span>
+      It opens opportunities for them as they
+    </span>
+    <span>
+      continue to Dream Bigger!
+    </span>
+
+    <div (click)="next()" class="pb-instruct__next">
+      NEXT
+    </div>
+  </div>
+
+  <div *ngIf="step === 2" class="pb-instruct__instruct-2 animate__bounceInLeft animate__animated">
+    <div class="pb-instruct__instruct-header">
+      <div>
+        <span>
+          Activate at least 5 OSTEOCALCIN 
+        </span>
+        <span>
+          molecules in 15 seconds by dragging
+        </span>
+      </div>
+      <img src="assets/images/osteo-basic.png" alt="Osteo">
+    </div>
+    <span>
+      Natural Vitamin K2 <img class="pb-instruct__vitamin" src="assets/images/vitamin.png" alt="Vitamin">&nbsp; to them.
+    </span>
+
+
+    <div (click)="next()" class="pb-instruct__next">
+      START
+    </div>
+  </div>
+
+</div>

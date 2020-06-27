@@ -1,0 +1,18 @@
+<div class="pb-game">
+  <div *ngIf="startTimer > -1" class="pb-game__timer-container-2">
+    <span class="pb-game__are-you-ready">
+      ARE YOU READY?
+    </span>
+    <span class="pb-game__timer">
+      {{ startTimer === 0 ? 'GO!' : startTimer }}
+    </span>
+  </div>
+
+  <div *ngIf="startTimer <= -1" class="pb-game__timer-container animate__bounceInRight animate__animated">
+    <span>00:{{ time }}</span>
+  </div>
+
+  <canvas *ngIf="startTimer <= -1" id="game">
+
+  </canvas>
+</div>

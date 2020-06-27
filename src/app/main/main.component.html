@@ -1,0 +1,17 @@
+<div class="pb-main" [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+
+
+  <div *ngIf="isPortrait" class="pb-main__use-landscape animate__animated animate__fadeInDown"
+    [ngStyle]="{height: height + 'px', width: width + 'px'}">
+    <img class="pb-main__logo" src="assets/images/osteo.png" alt="Logo">
+    <div class="pb-main__landscape-text">
+      <img src="assets/images/phone.png" alt="Phone">
+
+      <p>
+        This game works best <br>in landscape mode.
+      </p>
+    </div>
+  </div>
+
+</div>
